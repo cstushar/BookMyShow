@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}"/>
+    <style>
+        .container {
+            margin-top: 20px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .section-heading {
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<nav th:replace="index :: nav"></nav>
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <div class="container">
+                <p class="section-heading">About Us</p>
+
+                <p>Welcome to BookMyShow! we are
+                    passionate about bringing the magic of cinema to your fingertips. Our journey began with the vision
+                    to provide a seamless, convenient, and enjoyable experience for moviegoers. With a commitment to
+                    innovation and customer satisfaction, we have transformed the way people book and enjoy movies.</p>
+
+                <p class="section-heading">Our Mission</p>
+
+                <p>Our mission is simple: to connect movie enthusiasts with the films they love. We aim to provide a
+                    one-stop platform for movie ticket booking, ensuring that you can effortlessly plan your movie
+                    nights. From the latest blockbusters to timeless classics, our website offers a wide selection of
+                    films and showtime. We strive to make your movie-going experience as smooth and enjoyable as the
+                    movies themselves.</p>
+
+                <p class="section-heading">Why Choose Us?</p>
+
+                <ul>
+                    <li>User-Friendly Experience: We prioritize user-friendliness in our design, ensuring that booking
+                        your movie tickets is a breeze.
+                    </li>
+                    <li>Wide Movie Selection: Explore a diverse range of movies, from action-packed adventures to
+                        heartwarming dramas.
+                    </li>
+                    <li>Secure Transactions: Your privacy and payment information are important to us. Our secure
+                        platform ensures safe transactions.
+                    </li>
+                    <li>Real-Time Updates: Stay up-to-date with real-time movie schedules and availability.</li>
+                    <li>Dedicated Support: Our customer support team is here to assist you with any inquiries or issues
+                        you may have.
+                    </li>
+                </ul>
+
+                <p class="section-heading">Meet the Team</p>
+
+                <p>Behind BookMyShow, there is a passionate team dedicated to making your movie
+                    experience exceptional. We bring together professionals from the fields of technology, design, and
+                    cinema to ensure that your time with us is memorable.</p>
+
+                <p class="team-member">Tushar Gupta: Founder & CEO</p>
+
+                <p>We appreciate your trust in us and strive to continuously improve our services to exceed your
+                    expectations. Thank you for choosing BookMyShow for your movie
+                    adventures.</p>
+
+                <p>For any questions, suggestions, or feedback, please don't hesitate to <a href="/" th:href="@{/localization}">contact
+                    us</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
